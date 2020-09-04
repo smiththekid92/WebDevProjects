@@ -1,107 +1,93 @@
+Blog Project - Semantic HTML (user choice)
 # Blog Project - Semantic HTML
 
 **Navigation Bar**
 
-STEP 1.
+STEP 1. - Create the navigation section in your code
 * A common usage of a navigation bar is to create shortcuts for a webpage. This will allow the user to go directly to the information they want to access through the navigation links.
 * Create a `<nav>` element underneath the opening `<body>` tag.
 
-STEP 2. 
-* Within the `<nav>` element, create a `<ul>` element to create an unordered list. The unordered list should contain the following three items:
+STEP 2. - Create a list of navigation items in your code
+* The navigation list should contain the following three items:
 
     * Blog
     * Media
     * About
+    * Any other nav items
 
-Use an `<li> `element with `<a href=""></a>` nested within the `<li>` element to link the content to the nav bar. You may notice that the navbar doesn’t work right now but don’t worry, once the content is added, the navbar will be fully functional!
+* Be sure to assign id's to your navigation elements so that the nav bar is functional. More on that in a bit
 
+<br/>
 
 **Blog Content**
 
-STEP 3.
-* You need to title your blog, so people know what you’re writing about. Create a `<header>` element under the closing `</nav>` tag.
-* Within the `<header>` element, create an `<h1>` element which should contain the following:
+STEP 3. - Create a title & header
+* You need to title your blog, so people know what you’re writing about. Create a `<header>` under the closing `</nav>` tag.
+* Create a heading (hint `<h1>` might be really good here) and give it a name
 
-    New York City
-   
 STEP 4.
-* Create a `<main>` element below the closing `</header>` tag.
+This next bit of code will hold the *main* content of your webpage. You are giving this element an id so that you can target it with the nav bar.
+
 * Within the `<main>` element, create a `<section>` element with an id of “blog”.
 
-This `<section>` element will hold the main content of your webpage. You are giving this element an id so that you can target it with the nav bar.
-
 STEP 5.
-* Create an `<article>` element within the `<section>` element.
-* Then, create a `<p>` element within `<article>` that has the following:
-    > New York City is made up of five boroughs which include Queens, Manhattan, Brooklyn, the Bronx, and Staten Island. The city is the home of approximately 8 million people. In 1876, France gifted the City of New York what is known as the Statue of Liberty, which is currently located on Ellis Island commonly visited by tourists. However, it took 10 years to assemble and therefore wasn’t unveiled until 1886. Another tourist destination is Times Square. Times Square is commonly known for the big buildings, Broadway shows, and bright neon signs. This famous location was named after The New York Times after the Times moved to that location. Prior to that, it was named Longacre Square. New York City is also known for its bridges that connect the boroughs and allow ease of transportation.
+* Let's give your *article* some data. :) 
+* Then, create a `<p>` (or two) element within `<article>`:
+    > Lorem ipsum dolor sit amet, no singulis accusata vix, ex nonumy ceteros sea. Ne doctus adipisci cum. Omnium fuisset percipitur cu eam. Eum an denique suscipit disputationi. Postulant efficiantur pro an, eu porro putent nonumes vim, ius eu suscipit intellegat.
 
 STEP 6.
 * Now that our blog has some content, the next step is adding media to enhance our blog.
-* You can do this by using the `<figure>` element. Under the closing `</section>` tag create a `<figure>` element.
+* You can do this by using the `<figure>` element. Create one under the closing `</section>` tag.
 
 STEP 7.
-* Create an `<img>` tag within `<figure>` and use the following link as the src:
-    > https://codecademy-content.s3.amazonaws.com/courses/Semantic+HTML/statue-of-liberty.jpeg
+* A `<figure>` section wouldn't make much without some content. Maybe an image would be good
 
 STEP 8.
-* Let’s describe the image for those who don’t know what statue this is!
-    * Using `<figcaption>` add this description of the image:
-        >This is the Statue of Liberty, a popular tourist attraction located on Ellis Island.
+* Let’s describe the image for those who don’t know what statue this is and to make it more accessible!
+    * Using `<figcaption>` (hint: it goes inside the `<figure>` opening & closing tags.
+
+<br/>
 
 **Aside Content**
 
 STEP 9.
 * For our blog post, you need to add additional content to enhance the post, you can do this by using the `<aside>` element.
     * Under the closing `</figure>` tag create an `<aside>` element.
-        * Within `<aside>`, create a `<p>` element containing the following information:
-            > New York City is very popular for the variety of great food it has. Some of the top food items in NYC include:
+        * Within `<aside>`, create a `<p>` element containing a quote or some content you'd like to highlight.
 
 STEP 10.
-New York is known for its amazing food. Our blog should list some of the top food options in NYC. You can do this by creating an ordered list!
+Say you wanted to list something (i.e. resturants, books, resources, data, etc.) You can do this by creating an numbered or bulleted list!
 
-Create an ordered list by using the `<ol>` element within the `<aside>` element. In an ordered list the first item is ranked one, the second item is ranked two and so on.
+Create a list within the `<aside>` element. 
 
-* The ordered list should contain the following seven items in this order:
-
-    1. Pizza
-    2. Bagels
-    3. Burgers and Sandwiches
-    4. Ramen
-    5. Tacos
-    6. Pasta
-    7. Desserts
+<br/>
 
 **Media**
 
 STEP 11.
-* Right now our blog post consists of only one image. Adding more media can help give a better visual representation of New York. Let’s create a section for the media content.
+* Right now our blog post consists of only one image. Adding more media can help give a better visual representation of what you are writing about. Let’s create a section for the media content.
 
 * Create a `<section>` element with an id of “media” under the closing `</aside>` tag.
     * Within the new `<section>` element, create an `<article>` element.
-        * Then, create an `<h2>` element within `<article>` that says:
-            >The Scenery in NYC
+        * Then, create a subheading `<h2>` element within your `<article>` element.
 
 STEP 12.
-* You are going to add a little description to explain the media. Add a `<p>` element directly underneath the closing `</h2>` tag but within the `<article>` element with the following paragraph:
-    > While the view in the city is beautiful, the sounds are not as lovely. Below you'll see an example of the view and the sounds you'll deal with in NYC on a daily basis.
-    
+* You are going to add a little description to explain the media. Add a `<p>` element directly underneath the closing heading tag but within your `<article>` element.
+
 STEP 13.
-* New York City has a beautiful skyline, so let’s show that with a video.
-* Under the closing `</article>` tag, create a `<video>` element with the attribute controls. Use the following URL as the src:
-    >https://codecademy-content.s3.amazonaws.com/courses/Semantic+HTML/nyc-skyline-timelapse.mp4
+* Maybe you want to add a little video to enhance our content.
+* Under the closing `</article>` tag, create a `<video>` element with controls. 
 
 STEP 14.
-* During the night time, the New York City skyline can light up the whole sky! This time you are going to use `<embed>` to display an image of the skyline.
-* Create an `<embed>` element under the closing </video> tag. Use the following URL as the src:
-    >https://codecademy-content.s3.amazonaws.com/courses/Semantic+HTML/nyc-skyline.jpeg
+* In addition to your video you may have some embedded data that you want to add to your blog. Create an `<embed>` element under the closing </video> tag. 
 
 STEP 15.
-* New York City is known as “the city that never sleeps.” At any point in the day, you can hear the traffic as you make your way through the city. Let’s add an audio clip to show how loud NYC can be.
-* Create an `<audio>` tag with the attribute controls directly below the `<embed>` element. (Don’t forget the closing tag.)
-    * Inside the `<audio>` tag, insert an audio file with the following URL as the src:
-    >https://codecademy-content.s3.amazonaws.com/courses/Semantic+HTML/nyc-sounds.mov
+* Sometimes you may want to use music or sound for your  blog. Create an `<audio>` tag with controls directly below the `<embed>` element. (Don’t forget the closing tag.)
+
+<br/>
 
 **Footer**
+
 STEP 16.
 At the bottom of a page, you can add a footer to credit you for the creation of this blog!
 
@@ -111,6 +97,8 @@ At the bottom of a page, you can add a footer to credit you for the creation of 
     * A `<p>` tag that provides one type of contact information for people to reach you at. For example:
         >Contact information: Blogger@NYC.com
 
+<br/>
+<br/>
 
 **EXTRAS!!**
 * Create your virtual résumé webpage using only semantic elements.
