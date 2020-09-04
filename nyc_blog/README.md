@@ -102,3 +102,18 @@ STEP 15.
     >https://codecademy-content.s3.amazonaws.com/courses/Semantic+HTML/nyc-sounds.mov
 
 **Footer**
+STEP 16.
+At the bottom of a page, you can add a footer to credit you for the creation of this blog!
+
+* Create a `<footer>` element with an id of “about” under the closing `</main>` tag.
+* Inside, add the following content:
+    * A `<p>` tag with “Posted by:” followed by your name.
+    * A `<p>` tag that provides one type of contact information for people to reach you at. For example:
+        >Contact information: Blogger@NYC.com
+
+
+**EXTRAS!!**
+* Create your virtual résumé webpage using only semantic elements.
+* Now that you’ve created a blog about NYC, try creating a blog using only semantic elements about a different city or country!
+* Search up more semantic elements and try to add those into your current project.
+* Expand on this project by doing more research on New York City and adding any more valuable information you find.
