@@ -28,3 +28,11 @@ STEP 7.
 STEP 8.
 * Finally, let’s make the background of the page more interesting.
     * Let's give the *entire* page a background image.
+
+<br/>
+
+### EXTRAS!!
+* Create your own protfolio site
+    * Create multiple sections or pages
+    * Add working social media links
+    * Make the any links change color when you hover over them
