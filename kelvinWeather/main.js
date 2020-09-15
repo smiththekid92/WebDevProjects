@@ -6,3 +6,8 @@ const kelvin = 293;
 
  // Fahrenheit to Celsius conversion
  let fahrenheit = celsius * (9/5) + 32;
+
+ // Round down the F temp
+ fahrenheit = Math.floor(fahrenheit);
+
+ console.log('The tempature is ' + `${fahrenheit}` + ' degrees fahrenheit.')
