@@ -15,3 +15,12 @@ laterYears *= 4;
 // checking my work
 console.log(earlyYears);
 console.log(laterYears);
+
+// My actual age in dog years
+let myAgeInDogYears = earlyYears + laterYears;
+
+// My name in all lowercase
+const myName = 'Phoenix'.toLowerCase();
+
+// Info on my age in dog years
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} old in dog years.`)
