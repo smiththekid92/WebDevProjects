@@ -1,17 +1,17 @@
-let userName = '';
+let userName = 'Nick';
 
 userName ? console.log(`Hello ${userName}!`) :
   console.log('Hello!');
 
-const userQuestion = 'Should I get a dog?';
+const userQuestion = 'Should I get a puppy?';
 
-console.log(`${userQuestion}`);
+console.log(`${userName} asked the eight ball: ${userQuestion}`);
 
-const randomNumber = Math.floor(Math.random() * 8);
+let randomNumber = Math.floor(Math.random() * 8);
 
 let eightBall = '';
 
-switch (eightBall) {
+switch (randomNumber) {
   case 0:
   eightBall = 'Yes!';
   break;
@@ -44,3 +44,5 @@ switch (eightBall) {
   eightBall = 'It is what it is.';
   break;
 }
+
+console.log(`The eight ball says: ${eightBall}`);
