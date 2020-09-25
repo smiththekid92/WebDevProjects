@@ -10,6 +10,10 @@ const getUserChoice = userInput => {
   }
 }
 
+/*Test function
+
+console.log(getUserChoice('Paper'));*/
+
 // Computer choice function & logic
 
 function getComputerChoice(){
@@ -23,6 +27,10 @@ function getComputerChoice(){
       return 'scissors';
   }
 }
+
+/*Test function
+
+console.log(getComputerChoice());*/
 
 //Determine winner function & logic
 
@@ -55,3 +63,7 @@ function determineWinner(userChoice, computerChoice) {
     }
   }
 }
+
+/*Test function
+
+console.log(determineWinner('rock', 'scissors')); */
