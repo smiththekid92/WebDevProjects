@@ -24,3 +24,34 @@ function getComputerChoice(){
   }
 }
 
+//Determine winner function & logic
+
+function determineWinner(userChoice, computerChoice) {
+  if (userChoice === computerChoice){
+    return console.log('The game is a tie!');
+  }
+
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return 'The computer won!';
+    } else {
+     return 'You won!';
+    }
+  }
+
+  if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      return 'The computer won!';
+    } else {
+      return 'You won!'
+    }
+  }
+
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'The computer won!';
+    } else {
+      return 'You won!';
+    }
+  }
+}
