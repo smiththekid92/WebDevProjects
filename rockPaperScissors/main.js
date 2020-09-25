@@ -67,3 +67,17 @@ function determineWinner(userChoice, computerChoice) {
 /*Test function
 
 console.log(determineWinner('rock', 'scissors')); */
+
+// Start game function & logic
+
+const playGame = () => {
+  const userChoice = getUserChoice('rock');
+  const computerChoice = getComputerChoice();
+
+  console.log('You chose: ' + userChoice);
+  console.log('The computer chose: ' + computerChoice);
+
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame();
