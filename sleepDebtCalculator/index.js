@@ -35,14 +35,19 @@ console.log(getSleepHours('Friday')); //Output: No data available
 
 console.log(getSleepHours('Wednesday')); //Output: 7 */
 
-const getActualSleepHours = () => 
-getSleepHours('Sunday') + getSleepHours('Monday') + getSleepHours('Tuesday') + getSleepHours('Wednesday') + getSleepHours('Thursday') + getSleepHours('Friday') + getSleepHours('Saturday')
+// const getActualSleepHours = () => 
+// getSleepHours('Sunday') + getSleepHours('Monday') + getSleepHours('Tuesday') + getSleepHours('Wednesday') + getSleepHours('Thursday') + getSleepHours('Friday') + getSleepHours('Saturday')
 
+//Refactored version of above function
+const getActualSleepHours = () => 8 + 7 + 7 + 7 + 6 + 8 + 8;
 
-const getIdealSleepHours = () => {
-  let idealHours = 8;
-  return idealHours * 7;
-}
+// const getIdealSleepHours = () => {
+//   let idealHours = 8;
+//   return idealHours * 7;
+// }
+
+//Refactored above function
+const getIdealSleepHours = idealHours => idealHours * 7;
 
 /* 
 console.log(getActualSleepHours());
@@ -54,7 +59,10 @@ console.log(getIdealSleepHours());
 const calculateSleepDebt = () => {
   let actualSleepHours = getActualSleepHours();
 
-  let idealSleepHours = getIdealSleepHours();
+  // let idealSleepHours = getIdealSleepHours();
+
+  //Refactored variable to match above refactored function
+  let idealSleepHours = getIdealSleepHours(8);
 
   if (actualSleepHours === idealSleepHours) {
     console.log('Sleep Score: 100%. You got the pefect amount of sleep. Your sleep calculation is: ' + (idealSleepHours - actualSleepHours));
