@@ -26,7 +26,7 @@ const getSleepHours = day => {
 };
 
 /*
-console.log(getSleepHours('Friday')); //Output: No data available
+console.log(getSleepHours('Someday')); //Output: No data available
 
 console.log(getSleepHours('Sunday')); //Output: 8 
 
@@ -36,10 +36,33 @@ console.log(getSleepHours('Friday')); //Output: No data available
 console.log(getSleepHours('Wednesday')); //Output: 7 */
 
 const getActualSleepHours = () => 
-  getActualSleepHours('Sunday') + getActualSleepHours('Monday') + getActualSleepHours('Tuesday') + getActualSleepHours('Wednesday') + getActualSleepHours('Thursday') + getActualSleepHours('Friday') + getActualSleepHours('Saturday')
+getSleepHours('Sunday') + getSleepHours('Monday') + getSleepHours('Tuesday') + getSleepHours('Wednesday') + getSleepHours('Thursday') + getSleepHours('Friday') + getSleepHours('Saturday')
 
 
 const getIdealSleepHours = () => {
   let idealHours = 8;
   return idealHours * 7;
 }
+
+/* 
+console.log(getActualSleepHours());
+  Output: 51
+
+console.log(getIdealSleepHours()); 
+  Output: 56 */
+
+const calculateSleepDebt = () => {
+  let actualSleepHours = getActualSleepHours();
+
+  let idealSleepHours = getIdealSleepHours();
+
+  if (actualSleepHours === idealSleepHours) {
+    console.log('Sleep Score: 100%. You got the pefect amount of sleep. Your sleep calculation is: ' + (idealSleepHours - actualSleepHours));
+  } else if (actualSleepHours > idealSleepHours) {
+    console.log('Sleep Score: Greater than 100%. You got more sleep than you need. Your sleep calculation is: ' + (idealSleepHours - actualSleepHours));
+  } else {
+    console.log('Sleep deficit deceted! You need to get more sleep! Your sleep calculation is: ' + (idealSleepHours - actualSleepHours))
+  } 
+}
+
+calculateSleepDebt();
