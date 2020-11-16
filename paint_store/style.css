@@ -187,7 +187,7 @@ h1 {
   margin-bottom: 1.25rem;
   font-size: 1.125rem;
   font-weight: bold;
-
+  color: #9b9b9b
 }
 
 .color .swatch {
@@ -238,12 +238,12 @@ h1 {
 /* Red Swatches */
 
 .reds .base-color {
-  color: #ff002b;
+  color: hsl(350, 100%, 50%);
 }
 
 /* Red lightness decreases by 15 */
 .reds .lightness .color-1 {
-
+  color: hsl(350, 100%, 35%);
 }
 
 .reds .lightness .color-2 {
@@ -264,7 +264,7 @@ h1 {
 
 /* Red saturation decreases by 15 */
 .reds .saturation .color-1 {
-
+  color: hsl(350, 85%, 50%);
 }
 
 .reds .saturation .color-2 {
@@ -285,7 +285,7 @@ h1 {
 
 /* Red hue increases by 15 */
 .reds .hue .color-1 {
-
+  background-color: hsl(365, 40%, 50%);
 }
 
 .reds .hue .color-2 {
@@ -307,11 +307,12 @@ h1 {
 /* Green Swatches */
 
 .greens .base-color {
-  color: #00ff2a;
+  color: hsl(130, 100%, 50%);
 }
 
 /* Green lightness decreases by 20 */
 .greens .lightness .color-1 {
+  color: hsl(130, 100%, 20%);
 
 }
 
@@ -333,7 +334,7 @@ h1 {
 
 /* Green saturation decreases by 20 */
 .greens .saturation .color-1 {
-
+  background-color: hsl(104, 80%, 10%);
 }
 
 .greens .saturation .color-2 {
@@ -354,7 +355,7 @@ h1 {
 
 /* Green hue increases by 22 */
 .greens .hue .color-1 {
-
+  background-color: hsl(153, 20%, 50%);
 }
 
 .greens .hue .color-2 {
@@ -376,12 +377,12 @@ h1 {
 /* Blue Swatches */
 
 .blues .base-color {
-  color: #0055ff;
+  color: hsl(200, 100%, 50%);
 }
 
 /* Blue lightness decreases by 20 */
 .blues .lightness .color-1 {
-
+  background-color: hsl(220, 100%, 30%)
 }
 
 .blues .lightness .color-2 {
@@ -402,7 +403,7 @@ h1 {
 
 /* Blue saturation decreases by 20 */
 .blues .saturation .color-1 {
-
+  color: hsl(200, 80%, 50%);
 }
 
 .blues .saturation .color-2 {
